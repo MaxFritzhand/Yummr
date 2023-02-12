@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-SemiBold.ttf">
+            <string>Poppins-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoadingButton" customModule="PlopIt" customModuleProvider="target">
+            <connections>
+                <outlet property="actionButton" destination="5yb-4B-WOJ" id="C5q-Hw-PJ6"/>
+                <outlet property="contentView" destination="iN0-l3-epB" id="B7A-0R-W5k"/>
+                <outlet property="loaderActivityView" destination="k5V-Mf-Muv" id="wgj-zu-se9"/>
+                <outlet property="loadingView" destination="9lR-I7-fi3" id="S6L-GV-J6f"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="533" height="153"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5yb-4B-WOJ">
+                    <rect key="frame" x="0.0" y="0.0" width="533" height="153"/>
+                    <color key="backgroundColor" red="0.20392156859999999" green="0.21960784310000001" blue="0.56470588239999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="18"/>
+                    <state key="normal" title="Button">
+                        <color key="titleColor" red="0.94901960780000005" green="0.95294117649999999" blue="0.95294117649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="actionTapped" destination="-1" eventType="touchUpInside" id="HcM-CN-H6I"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9lR-I7-fi3">
+                    <rect key="frame" x="0.0" y="0.0" width="533" height="153"/>
+                    <subviews>
+                        <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="k5V-Mf-Muv">
+                            <rect key="frame" x="0.0" y="0.0" width="533" height="153"/>
+                            <color key="color" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </activityIndicatorView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.20392156859999999" green="0.21960784310000001" blue="0.56470588239999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="k5V-Mf-Muv" secondAttribute="trailing" id="K5J-SO-eaJ"/>
+                        <constraint firstItem="k5V-Mf-Muv" firstAttribute="top" secondItem="9lR-I7-fi3" secondAttribute="top" id="MFo-If-8Ae"/>
+                        <constraint firstAttribute="bottom" secondItem="k5V-Mf-Muv" secondAttribute="bottom" id="jR8-2T-0Ys"/>
+                        <constraint firstItem="k5V-Mf-Muv" firstAttribute="leading" secondItem="9lR-I7-fi3" secondAttribute="leading" id="p8Y-K7-jt8"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <constraints>
+                <constraint firstItem="9lR-I7-fi3" firstAttribute="leading" secondItem="5yb-4B-WOJ" secondAttribute="leading" id="MeD-Qt-Lbi"/>
+                <constraint firstItem="5yb-4B-WOJ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="PcN-rk-4Yo"/>
+                <constraint firstItem="9lR-I7-fi3" firstAttribute="trailing" secondItem="5yb-4B-WOJ" secondAttribute="trailing" id="ZMI-xF-VjO"/>
+                <constraint firstAttribute="trailing" secondItem="5yb-4B-WOJ" secondAttribute="trailing" id="afO-wk-2sn"/>
+                <constraint firstItem="5yb-4B-WOJ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="gjt-FV-UlL"/>
+                <constraint firstAttribute="bottom" secondItem="5yb-4B-WOJ" secondAttribute="bottom" id="leN-dB-SH3"/>
+                <constraint firstItem="9lR-I7-fi3" firstAttribute="top" secondItem="5yb-4B-WOJ" secondAttribute="top" id="vMV-gw-JWV"/>
+                <constraint firstItem="9lR-I7-fi3" firstAttribute="bottom" secondItem="5yb-4B-WOJ" secondAttribute="bottom" id="zXn-JP-yqg"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="223.91304347826087" y="-151.00446428571428"/>
+        </view>
+    </objects>
+</document>

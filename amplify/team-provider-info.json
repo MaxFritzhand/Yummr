@@ -1,0 +1,21 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-plopit-dev-204346-authRole",
+      "UnauthRoleArn": "arn:aws:iam::415575780300:role/amplify-plopit-dev-204346-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::415575780300:role/amplify-plopit-dev-204346-authRole",
+      "Region": "us-west-2",
+      "DeploymentBucketName": "amplify-plopit-dev-204346-deployment",
+      "UnauthRoleName": "amplify-plopit-dev-204346-unauthRole",
+      "StackName": "amplify-plopit-dev-204346",
+      "StackId": "arn:aws:cloudformation:us-west-2:415575780300:stack/amplify-plopit-dev-204346/25bf1780-9d8e-11ec-afe2-06039fb616cf",
+      "AmplifyAppId": "d2bgx4j6w6ysx4"
+    },
+    "categories": {
+      "auth": {
+        "plopit64af440f": {},
+        "true": {}
+      }
+    }
+  }
+}

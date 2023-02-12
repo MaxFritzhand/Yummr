@@ -1,0 +1,18 @@
+{
+  "resourceName": "s3bcfa66dc",
+  "policyUUID": "bcfa66dc",
+  "bucketName": "plopit4b37e242ab254f2a99a54f6f29109889",
+  "storageAccess": "authAndGuest",
+  "guestAccess": [
+    "CREATE_AND_UPDATE",
+    "READ",
+    "DELETE"
+  ],
+  "authAccess": [
+    "CREATE_AND_UPDATE",
+    "READ",
+    "DELETE"
+  ],
+  "triggerFunction": "NONE",
+  "groupAccess": {}
+}

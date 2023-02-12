@@ -1,0 +1,490 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="fGz-5F-ao9" customClass="InfoDetailsTableViewCell" customModule="PlopIt" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="434"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fGz-5F-ao9" id="4PS-fS-8kd">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="434"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="711-ba-JVR">
+                        <rect key="frame" x="24" y="30" width="366" height="214.5"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ac3-e3-ZyZ">
+                                <rect key="frame" x="0.0" y="0.0" width="40" height="214.5"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="Gf6-cu-E7h"/>
+                                    <constraint firstAttribute="width" constant="40" id="MDu-mX-v0Z"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Te-pa-D5j" userLabel="rowLabel">
+                                <rect key="frame" x="90" y="0.0" width="276" height="214.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="plus" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="KVB-Gb-Dss">
+                                <rect key="frame" x="341" y="2" width="25" height="210.5"/>
+                                <color key="tintColor" systemColor="systemGray3Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="25" id="dzh-eu-21r"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="gCG-kw-Pgg"/>
+                                </constraints>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
+                            </imageView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="5Te-pa-D5j" firstAttribute="leading" secondItem="ac3-e3-ZyZ" secondAttribute="trailing" constant="50" id="7gu-D1-ibH"/>
+                            <constraint firstItem="KVB-Gb-Dss" firstAttribute="leading" secondItem="ac3-e3-ZyZ" secondAttribute="trailing" constant="301" id="LbA-8f-MmE"/>
+                            <constraint firstAttribute="trailing" secondItem="5Te-pa-D5j" secondAttribute="trailing" id="z39-7Z-pkg"/>
+                        </constraints>
+                    </stackView>
+                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TBa-dJ-ekZ" userLabel="Hours">
+                        <rect key="frame" x="20" y="267.5" width="374" height="143.5"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="zDd-jY-etS" userLabel="DailyView">
+                                <rect key="frame" x="0.0" y="0.0" width="374" height="143.5"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="i80-gb-6Mu" userLabel="Monday Time">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="20.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Monday" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DwH-vb-STH" userLabel="Day">
+                                                <rect key="frame" x="62" y="0.0" width="125" height="20.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="125" id="VsC-Nm-Etc"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fj1-VF-Kg7" userLabel="Time">
+                                                <rect key="frame" x="187" y="0.0" width="125" height="20.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="125" id="sTe-Ea-LvF"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="DwH-vb-STH" firstAttribute="leading" secondItem="i80-gb-6Mu" secondAttribute="leading" constant="62" id="icu-5w-Xej"/>
+                                            <constraint firstAttribute="trailing" secondItem="fj1-VF-Kg7" secondAttribute="trailing" constant="62" id="wYb-HH-ils"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0YH-YB-v5m" userLabel="Tuesday Time">
+                                        <rect key="frame" x="0.0" y="20.5" width="374" height="20.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Tuesday" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qlZ-dF-j81" userLabel="Day">
+                                                <rect key="frame" x="62" y="0.0" width="125" height="20.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="125" id="zzj-TM-t9k"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S29-7G-0tj" userLabel="Time">
+                                                <rect key="frame" x="187" y="0.0" width="125" height="20.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="125" id="AIh-EU-rCG"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="qlZ-dF-j81" firstAttribute="leading" secondItem="0YH-YB-v5m" secondAttribute="leading" constant="62" id="1rn-6z-c3i"/>
+                                            <constraint firstAttribute="trailing" secondItem="S29-7G-0tj" secondAttribute="trailing" constant="62" id="sHZ-NC-ONW"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mBQ-tg-ZEi" userLabel="Wednesday Time">
+                                        <rect key="frame" x="0.0" y="41" width="374" height="20.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Wednesday" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Wj-Om-uqt" userLabel="Day">
+                                                <rect key="frame" x="62" y="0.0" width="125" height="20.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="125" id="b3u-oD-cyt"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZWl-6n-zKs" userLabel="Time">
+                                                <rect key="frame" x="187" y="0.0" width="125" height="20.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="125" id="ioM-jR-nBg"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="7Wj-Om-uqt" firstAttribute="leading" secondItem="mBQ-tg-ZEi" secondAttribute="leading" constant="62" id="a4c-Z3-Ou7"/>
+                                            <constraint firstAttribute="trailing" secondItem="ZWl-6n-zKs" secondAttribute="trailing" constant="62" id="f24-ph-5wr"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8FN-Xe-QVL" userLabel="Thursday Time">
+                                        <rect key="frame" x="0.0" y="61.5" width="374" height="20.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Thursday" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CYx-Ch-525" userLabel="Day">
+                                                <rect key="frame" x="62" y="0.0" width="125" height="20.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="125" id="UWH-Xe-I5Y"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AfI-4j-b2P" userLabel="Time">
+                                                <rect key="frame" x="187" y="0.0" width="125" height="20.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="125" id="fNW-ux-o3L"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="AfI-4j-b2P" secondAttribute="trailing" constant="62" id="rpn-oJ-ZCm"/>
+                                            <constraint firstItem="CYx-Ch-525" firstAttribute="leading" secondItem="8FN-Xe-QVL" secondAttribute="leading" constant="62" id="wzQ-M1-upM"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ukK-sO-UcY" userLabel="Friday Time">
+                                        <rect key="frame" x="0.0" y="82" width="374" height="20.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Friday" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dxa-Ge-0yg" userLabel="Day">
+                                                <rect key="frame" x="62" y="0.0" width="125" height="20.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="125" id="m77-rm-Tps"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kfK-Z3-OIm" userLabel="Time">
+                                                <rect key="frame" x="187" y="0.0" width="125" height="20.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="125" id="z7H-pT-ZF0"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="kfK-Z3-OIm" secondAttribute="trailing" constant="62" id="WHI-vg-dK2"/>
+                                            <constraint firstItem="dxa-Ge-0yg" firstAttribute="leading" secondItem="ukK-sO-UcY" secondAttribute="leading" constant="62" id="qKh-zr-aTd"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JqI-H7-2Km" userLabel="Saturday Time">
+                                        <rect key="frame" x="0.0" y="102.5" width="374" height="20.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Saturday" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c9l-1b-QrN" userLabel="Day">
+                                                <rect key="frame" x="62" y="0.0" width="125" height="20.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="125" id="wmd-EX-LAN"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BMV-Wo-O68" userLabel="Time">
+                                                <rect key="frame" x="187" y="0.0" width="125" height="20.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="125" id="PFn-w5-QhW"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="BMV-Wo-O68" secondAttribute="trailing" constant="62" id="7pp-f9-9M0"/>
+                                            <constraint firstItem="c9l-1b-QrN" firstAttribute="leading" secondItem="JqI-H7-2Km" secondAttribute="leading" constant="62" id="s6m-F0-wNk"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="O9n-9w-8yr" userLabel="Sunday Time">
+                                        <rect key="frame" x="0.0" y="123" width="374" height="20.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Sunday" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FOY-SN-mym" userLabel="Day">
+                                                <rect key="frame" x="62" y="0.0" width="125" height="20.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="125" id="gTO-Jp-ZAY"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L1O-YM-LJV" userLabel="Time">
+                                                <rect key="frame" x="187" y="0.0" width="125" height="20.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="125" id="xKj-9w-dT0"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="L1O-YM-LJV" secondAttribute="trailing" constant="62" id="0ly-7s-R1k"/>
+                                            <constraint firstItem="FOY-SN-mym" firstAttribute="leading" secondItem="O9n-9w-8yr" secondAttribute="leading" constant="62" id="6Mf-Oc-Ozv"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="6o9-7n-qBx" userLabel="SameTime">
+                                <rect key="frame" x="0.0" y="0.0" width="139.5" height="214"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Monday" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D3G-GM-8Xp" userLabel="Day">
+                                        <rect key="frame" x="0.0" y="0.0" width="139.5" height="70.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="AnI-G3-gSW"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mHG-Rx-xxn" userLabel="Time">
+                                        <rect key="frame" x="0.0" y="70.5" width="150" height="20.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="150" id="fQB-oK-ytX"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fBH-sD-UI6" userLabel="Tuesday Time">
+                                        <rect key="frame" x="0.0" y="91" width="374" height="20.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tuesday" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kDL-rl-sAg" userLabel="Day">
+                                                <rect key="frame" x="62" y="0.0" width="100" height="20.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="100" id="Beb-QN-Bzr"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6PZ-sJ-dNa" userLabel="Time">
+                                                <rect key="frame" x="162" y="0.0" width="150" height="20.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="150" id="azG-5L-xRi"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" name="brown"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="6PZ-sJ-dNa" secondAttribute="trailing" constant="62" id="0Sb-wb-qUZ"/>
+                                            <constraint firstItem="kDL-rl-sAg" firstAttribute="leading" secondItem="fBH-sD-UI6" secondAttribute="leading" constant="62" id="2rK-uv-cAt"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CGb-xd-Idl" userLabel="Wednesday Time">
+                                        <rect key="frame" x="0.0" y="111.5" width="374" height="20.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wednesday" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dJB-ap-Nlj" userLabel="Day">
+                                                <rect key="frame" x="62" y="0.0" width="125" height="20.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="125" id="xAc-4w-l6T"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rWR-J7-fpg" userLabel="Time">
+                                                <rect key="frame" x="187" y="0.0" width="125" height="20.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="125" id="nCq-QX-CIP"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" name="brown"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="rWR-J7-fpg" secondAttribute="trailing" constant="62" id="STx-va-TVz"/>
+                                            <constraint firstItem="dJB-ap-Nlj" firstAttribute="leading" secondItem="CGb-xd-Idl" secondAttribute="leading" constant="62" id="yZf-3R-AlZ"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UiI-Vk-Tmx" userLabel="Thursday Time">
+                                        <rect key="frame" x="0.0" y="132" width="374" height="20.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thursday" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Zj-Ts-0tk" userLabel="Day">
+                                                <rect key="frame" x="62" y="0.0" width="125" height="20.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="125" id="EAv-pz-Hp6"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nFD-GP-obl" userLabel="Time">
+                                                <rect key="frame" x="187" y="0.0" width="125" height="20.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="125" id="oQ8-JS-SUB"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" name="brown"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="nFD-GP-obl" secondAttribute="trailing" constant="62" id="APG-Gz-1gg"/>
+                                            <constraint firstItem="3Zj-Ts-0tk" firstAttribute="leading" secondItem="UiI-Vk-Tmx" secondAttribute="leading" constant="62" id="Aw7-Yc-F4u"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="I2Q-mY-nCY" userLabel="Friday Time">
+                                        <rect key="frame" x="0.0" y="152.5" width="374" height="20.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Friday" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2G1-Mr-ewK" userLabel="Day">
+                                                <rect key="frame" x="62" y="0.0" width="125" height="20.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="125" id="hYI-DV-lFd"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L3Z-tk-ot0" userLabel="Time">
+                                                <rect key="frame" x="187" y="0.0" width="125" height="20.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="125" id="XHO-RV-M4K"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" name="brown"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="L3Z-tk-ot0" secondAttribute="trailing" constant="62" id="WJB-pX-reh"/>
+                                            <constraint firstItem="2G1-Mr-ewK" firstAttribute="leading" secondItem="I2Q-mY-nCY" secondAttribute="leading" constant="62" id="yh4-Hs-blQ"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Pdu-AF-UgM" userLabel="Saturday Time">
+                                        <rect key="frame" x="0.0" y="173" width="374" height="20.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Saturday" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nmn-po-8Ot" userLabel="Day">
+                                                <rect key="frame" x="62" y="0.0" width="125" height="20.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="125" id="Fwb-DS-y3N"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bAe-l1-RIU" userLabel="Time">
+                                                <rect key="frame" x="187" y="0.0" width="125" height="20.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="125" id="EMy-ga-aKP"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" name="brown"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="bAe-l1-RIU" secondAttribute="trailing" constant="62" id="1v5-KH-KyX"/>
+                                            <constraint firstItem="Nmn-po-8Ot" firstAttribute="leading" secondItem="Pdu-AF-UgM" secondAttribute="leading" constant="62" id="fIc-ur-kVr"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pSd-6L-6C1" userLabel="Sunday Time">
+                                        <rect key="frame" x="0.0" y="193.5" width="374" height="20.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sunday" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NPA-cl-66s" userLabel="Day">
+                                                <rect key="frame" x="62" y="0.0" width="125" height="20.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="125" id="af5-Lu-pFK"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dR7-vc-tan" userLabel="Time">
+                                                <rect key="frame" x="187" y="0.0" width="125" height="20.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="125" id="xA1-CH-Jh5"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" name="brown"/>
+                                        <constraints>
+                                            <constraint firstItem="NPA-cl-66s" firstAttribute="leading" secondItem="pSd-6L-6C1" secondAttribute="leading" constant="62" id="Axf-pt-GI3"/>
+                                            <constraint firstAttribute="trailing" secondItem="dR7-vc-tan" secondAttribute="trailing" constant="62" id="l3H-FJ-wbp"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="6o9-7n-qBx"/>
+                            </mask>
+                        </variation>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottomMargin" secondItem="TBa-dJ-ekZ" secondAttribute="bottom" constant="12" id="7ce-Rw-BEg"/>
+                    <constraint firstItem="711-ba-JVR" firstAttribute="centerX" secondItem="4PS-fS-8kd" secondAttribute="centerX" id="VPI-Cg-VeV"/>
+                    <constraint firstItem="TBa-dJ-ekZ" firstAttribute="top" secondItem="711-ba-JVR" secondAttribute="bottom" constant="23" id="Xfm-OR-yUd"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="TBa-dJ-ekZ" secondAttribute="trailing" id="Zxx-dp-yOY"/>
+                    <constraint firstItem="711-ba-JVR" firstAttribute="top" secondItem="4PS-fS-8kd" secondAttribute="top" constant="30" id="dDJ-VV-vCT"/>
+                    <constraint firstAttribute="trailing" secondItem="711-ba-JVR" secondAttribute="trailing" constant="24" id="le0-Bg-foC"/>
+                    <constraint firstItem="TBa-dJ-ekZ" firstAttribute="leading" secondItem="4PS-fS-8kd" secondAttribute="leadingMargin" id="v6h-AP-1OK"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="detailImage" destination="ac3-e3-ZyZ" id="Lk5-3m-6Yc"/>
+                <outlet property="fridayHours" destination="kfK-Z3-OIm" id="rf2-4Q-U9N"/>
+                <outlet property="fridayView" destination="ukK-sO-UcY" id="Nde-sF-6xU"/>
+                <outlet property="mondayHours" destination="fj1-VF-Kg7" id="i5P-YI-pWs"/>
+                <outlet property="mondayView" destination="i80-gb-6Mu" id="YhH-Dm-uy0"/>
+                <outlet property="plusSign" destination="KVB-Gb-Dss" id="ZsM-Jm-mPc"/>
+                <outlet property="rowLabel" destination="5Te-pa-D5j" id="mBt-97-ZAC"/>
+                <outlet property="saturdayHours" destination="BMV-Wo-O68" id="C5J-SY-XBl"/>
+                <outlet property="saturdayView" destination="JqI-H7-2Km" id="DeP-96-PHy"/>
+                <outlet property="sundayHours" destination="L1O-YM-LJV" id="scP-6q-naC"/>
+                <outlet property="sundayView" destination="O9n-9w-8yr" id="1r7-ew-86P"/>
+                <outlet property="thursdayHours" destination="AfI-4j-b2P" id="2qP-I2-hbW"/>
+                <outlet property="thursdayView" destination="8FN-Xe-QVL" id="RcT-Uv-aHB"/>
+                <outlet property="tuesdayHours" destination="S29-7G-0tj" id="ukp-BJ-1pF"/>
+                <outlet property="tuesdayView" destination="0YH-YB-v5m" id="e7h-ae-4S6"/>
+                <outlet property="wednesdayHours" destination="ZWl-6n-zKs" id="Wfz-Dg-bin"/>
+                <outlet property="wednesdayView" destination="mBQ-tg-ZEi" id="K4W-TN-7gD"/>
+            </connections>
+            <point key="canvasLocation" x="-975" y="-617"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="plus" catalog="system" width="128" height="113"/>
+        <namedColor name="brown">
+            <color red="1" green="0.78799998760223389" blue="0.58300000429153442" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemGray3Color">
+            <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

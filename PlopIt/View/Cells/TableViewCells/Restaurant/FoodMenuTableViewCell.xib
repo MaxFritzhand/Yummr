@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Regular.ttf">
+            <string>Poppins-Regular</string>
+        </array>
+        <array key="Poppins-SemiBold.ttf">
+            <string>Poppins-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="229" id="KGk-i7-Jjw" customClass="FoodMenuTableViewCell" customModule="PlopIt" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="648" height="229"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="648" height="229"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e0M-ng-ESE">
+                        <rect key="frame" x="0.0" y="10" width="646" height="156"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="applePie" translatesAutoresizingMaskIntoConstraints="NO" id="FtH-Cj-Q9f">
+                                <rect key="frame" x="0.0" y="0.0" width="172" height="156"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="172" id="fq5-Wh-TWj"/>
+                                    <constraint firstAttribute="height" constant="156" id="pei-K3-26k"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="French Apple Pie" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ISR-dd-HAQ">
+                                <rect key="frame" x="188" y="17" width="442" height="17"/>
+                                <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gco-7A-V1C">
+                                <rect key="frame" x="188" y="42" width="442" height="61"/>
+                                <string key="text">Amet nisl purus in mollis. Vitae congue 
+mauris rhoncus aenean vel elit. In dictum non consectetur a erat nam at. Mauris a diam maecenas sed enim ut sem viverra. </string>
+                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="10"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QE5-R5-yRK">
+                                <rect key="frame" x="305" y="0.0" width="78" height="52"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pencil.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="wYY-MX-3Nc">
+                                        <rect key="frame" x="-5" y="-2.5" width="80" height="56"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="tintColor" red="0.9930898547" green="0.43390092250000001" blue="0.2166463435" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemPinkColor"/>
+                                <color key="tintColor" red="0.9930898547" green="0.43390092250000001" blue="0.2166463435" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vAy-ka-rsE">
+                                <rect key="frame" x="187" y="118" width="79.5" height="20"/>
+                                <color key="backgroundColor" red="1" green="0.43529411764705883" blue="0.2627450980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="d7O-Ao-kUj"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="VIEW IN 3D">
+                                    <fontDescription key="titleFontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="10"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="view3DTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="OMS-31-FjW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y0V-MQ-SrD" userLabel="editButton">
+                                <rect key="frame" x="592" y="0.0" width="49" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title=" ">
+                                    <imageReference key="image" image="pencil.circle.fill" catalog="system" symbolScale="large" renderingMode="original"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" scale="large"/>
+                                    <color key="baseForegroundColor" red="0.9930898547" green="0.43390092250000001" blue="0.2166463435" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="viewItemDetail:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="oEw-Pk-IgL"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$7.99" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eW1-pc-GqM" userLabel="price">
+                                <rect key="frame" x="585" y="118" width="36" height="19"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8zy-zV-DPt" userLabel="ImgButton">
+                                <rect key="frame" x="0.0" y="3" width="172" height="153"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain"/>
+                                <connections>
+                                    <action selector="view3DTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="td8-bo-WhB"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Y0V-MQ-SrD" firstAttribute="top" secondItem="e0M-ng-ESE" secondAttribute="top" id="0UD-0r-azf"/>
+                            <constraint firstAttribute="bottom" secondItem="vAy-ka-rsE" secondAttribute="bottom" constant="18" id="1KH-Dw-FtG"/>
+                            <constraint firstItem="QE5-R5-yRK" firstAttribute="centerY" secondItem="e0M-ng-ESE" secondAttribute="centerY" id="3HQ-MN-KL6"/>
+                            <constraint firstAttribute="trailing" secondItem="Y0V-MQ-SrD" secondAttribute="trailing" constant="5" id="5cp-aL-et3"/>
+                            <constraint firstAttribute="trailing" secondItem="eW1-pc-GqM" secondAttribute="trailing" constant="25" id="63k-ru-kmA"/>
+                            <constraint firstItem="QE5-R5-yRK" firstAttribute="centerX" secondItem="e0M-ng-ESE" secondAttribute="centerX" id="8fK-d9-rsg"/>
+                            <constraint firstAttribute="bottom" secondItem="FtH-Cj-Q9f" secondAttribute="bottom" id="9OM-P9-KbC"/>
+                            <constraint firstAttribute="bottom" secondItem="eW1-pc-GqM" secondAttribute="bottom" constant="19" id="AFo-Do-7tM"/>
+                            <constraint firstItem="FtH-Cj-Q9f" firstAttribute="centerY" secondItem="e0M-ng-ESE" secondAttribute="centerY" id="E36-h8-r6Z"/>
+                            <constraint firstItem="ISR-dd-HAQ" firstAttribute="leading" secondItem="FtH-Cj-Q9f" secondAttribute="trailing" constant="16" id="Ep4-eF-ZrR"/>
+                            <constraint firstItem="gco-7A-V1C" firstAttribute="trailing" secondItem="ISR-dd-HAQ" secondAttribute="trailing" id="Hue-bx-G6H"/>
+                            <constraint firstItem="gco-7A-V1C" firstAttribute="top" secondItem="ISR-dd-HAQ" secondAttribute="bottom" constant="8" id="Oet-ho-FM8"/>
+                            <constraint firstItem="vAy-ka-rsE" firstAttribute="leading" secondItem="FtH-Cj-Q9f" secondAttribute="trailing" constant="15" id="SAT-eE-aYN"/>
+                            <constraint firstItem="eW1-pc-GqM" firstAttribute="top" secondItem="gco-7A-V1C" secondAttribute="bottom" constant="15" id="Sqc-It-bty"/>
+                            <constraint firstAttribute="height" constant="156" id="V9j-0q-ZJj"/>
+                            <constraint firstItem="FtH-Cj-Q9f" firstAttribute="top" secondItem="e0M-ng-ESE" secondAttribute="top" id="ZTN-LN-RfR"/>
+                            <constraint firstItem="gco-7A-V1C" firstAttribute="top" secondItem="Y0V-MQ-SrD" secondAttribute="bottom" constant="11" id="hTn-79-k1p"/>
+                            <constraint firstItem="ISR-dd-HAQ" firstAttribute="top" secondItem="e0M-ng-ESE" secondAttribute="top" constant="17" id="k5w-1r-OSy"/>
+                            <constraint firstItem="gco-7A-V1C" firstAttribute="leading" secondItem="ISR-dd-HAQ" secondAttribute="leading" id="trO-8p-MPr"/>
+                            <constraint firstItem="vAy-ka-rsE" firstAttribute="top" secondItem="gco-7A-V1C" secondAttribute="bottom" constant="15" id="x12-F5-v8y"/>
+                            <constraint firstItem="FtH-Cj-Q9f" firstAttribute="leading" secondItem="e0M-ng-ESE" secondAttribute="leading" id="yPq-02-Q5T"/>
+                            <constraint firstAttribute="trailing" secondItem="ISR-dd-HAQ" secondAttribute="trailing" constant="16" id="yZ1-lX-uQ4"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="QE5-R5-yRK"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" red="0.94901960780000005" green="0.95294117649999999" blue="0.95294117649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstItem="e0M-ng-ESE" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="1jC-4Y-vqa"/>
+                    <constraint firstAttribute="trailing" secondItem="e0M-ng-ESE" secondAttribute="trailing" id="3lE-WZ-uiy"/>
+                    <constraint firstItem="e0M-ng-ESE" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="4K2-6D-uWC"/>
+                    <constraint firstAttribute="bottom" secondItem="e0M-ng-ESE" secondAttribute="bottom" constant="10" id="CEN-4B-ikU"/>
+                    <constraint firstAttribute="trailing" secondItem="e0M-ng-ESE" secondAttribute="trailing" constant="2" id="gr3-83-auz"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="ImgButton" destination="8zy-zV-DPt" id="AI4-ya-qmV"/>
+                <outlet property="editButton" destination="Y0V-MQ-SrD" id="ECV-rw-iy9"/>
+                <outlet property="itemDescription" destination="gco-7A-V1C" id="LIx-0m-2P5"/>
+                <outlet property="itemPrice" destination="eW1-pc-GqM" id="Dbr-LH-Ubg"/>
+                <outlet property="itemTitle" destination="ISR-dd-HAQ" id="4Ly-0f-beG"/>
+                <outlet property="mainImageView" destination="FtH-Cj-Q9f" id="oDz-nh-bGg"/>
+                <outlet property="view3DButton" destination="vAy-ka-rsE" id="b4A-2M-15H"/>
+            </connections>
+            <point key="canvasLocation" x="508.69565217391306" y="57.254464285714285"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="applePie" width="86" height="78"/>
+        <image name="pencil.circle.fill" catalog="system" width="128" height="121"/>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

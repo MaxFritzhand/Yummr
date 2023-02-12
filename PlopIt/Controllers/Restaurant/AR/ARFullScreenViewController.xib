@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Bold.ttf">
+            <string>Poppins-Bold</string>
+        </array>
+        <array key="Poppins-Regular.ttf">
+            <string>Poppins-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ARFullScreenViewController" customModule="PlopIt" customModuleProvider="target">
+            <connections>
+                <outlet property="ARView" destination="uU9-PI-Vd3" id="phV-yx-FS4"/>
+                <outlet property="backButton" destination="g4L-k6-gk4" id="dRb-fj-4St"/>
+                <outlet property="beveragesButton" destination="d5Y-wx-IR0" id="IDz-QY-uA4"/>
+                <outlet property="collectionView" destination="WA5-hb-9k3" id="zMl-3E-OYT"/>
+                <outlet property="descriptionLabel" destination="jdi-Rl-KpL" id="S9e-oV-4pV"/>
+                <outlet property="descriptionView" destination="VF0-fc-l6r" id="RS7-YV-GdS"/>
+                <outlet property="dessertsButton" destination="TKe-gZ-E78" id="cVO-Pm-TMD"/>
+                <outlet property="foodButton" destination="6QU-C8-F6S" id="UG3-kw-4vC"/>
+                <outlet property="promotionsButton" destination="Lg1-aw-V4Z" id="JDr-mi-rwq"/>
+                <outlet property="titleLabel" destination="No1-jK-oGu" id="8sg-8q-RxN"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outletCollection property="foodTypeButtons" destination="6QU-C8-F6S" collectionClass="NSMutableArray" id="4ZT-0v-91Q"/>
+                <outletCollection property="foodTypeButtons" destination="d5Y-wx-IR0" collectionClass="NSMutableArray" id="Gzd-Jg-tzH"/>
+                <outletCollection property="foodTypeButtons" destination="TKe-gZ-E78" collectionClass="NSMutableArray" id="21y-Ng-LlH"/>
+                <outletCollection property="foodTypeButtons" destination="Lg1-aw-V4Z" collectionClass="NSMutableArray" id="NFb-sT-AAu"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uU9-PI-Vd3">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                </arscnView>
+                <view alpha="0.40000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VF0-fc-l6r">
+                    <rect key="frame" x="43" y="562.5" width="328" height="95.5"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="French Apple Pie" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="No1-jK-oGu">
+                    <rect key="frame" x="59" y="574.5" width="296" height="25.5"/>
+                    <fontDescription key="fontDescription" name="Poppins-Bold" family="Poppins" pointSize="18"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jdi-Rl-KpL" userLabel="A delicatent, delicious Apple Pie, baked in house to a  golden crust of perfection.">
+                    <rect key="frame" x="59" y="620" width="296" height="28"/>
+                    <string key="text">A delicatent, delicious Apple Pie, baked in house to a 
+golden crust of perfection. </string>
+                    <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="10"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g4L-k6-gk4">
+                    <rect key="frame" x="16" y="44" width="77.5" height="31"/>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" image="back" title="Button" imagePadding="7">
+                        <fontDescription key="titleFontDescription" name="Poppins-Regular" family="Poppins" pointSize="12"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="backButtonTapped:" destination="-1" eventType="touchUpInside" id="m19-g3-ipD"/>
+                    </connections>
+                </button>
+                <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="vaL-qg-lhf">
+                    <rect key="frame" x="336" y="48" width="62" height="23"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gNZ-5t-uHH">
+                            <rect key="frame" x="0.0" y="0.0" width="23" height="23"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="23" id="Zn6-7K-m1e"/>
+                                <constraint firstAttribute="width" constant="23" id="cyg-gJ-Lsd"/>
+                            </constraints>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" image="categoryButton"/>
+                            <connections>
+                                <action selector="categoryButtonTapped:" destination="-1" eventType="touchUpInside" id="upd-bR-faB"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WGE-VJ-eo4">
+                            <rect key="frame" x="39" y="0.0" width="23" height="23"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="23" id="VVL-81-ack"/>
+                                <constraint firstAttribute="width" constant="23" id="qz3-QN-Dze"/>
+                            </constraints>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" image="Share"/>
+                            <connections>
+                                <action selector="shareButtonTapped:" destination="-1" eventType="touchUpInside" id="2le-gR-2Ib"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="fem-xl-kRf">
+                    <rect key="frame" x="50" y="678" width="314" height="21"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6QU-C8-F6S">
+                            <rect key="frame" x="0.0" y="0.0" width="72" height="21"/>
+                            <color key="backgroundColor" red="0.43921568630000002" green="0.43921568630000002" blue="0.43921568630000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="70" id="Enz-Xb-Aw3"/>
+                            </constraints>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="Food">
+                                <fontDescription key="titleFontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="7"/>
+                                <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </buttonConfiguration>
+                            <connections>
+                                <action selector="foodTypeTapped:" destination="-1" eventType="touchUpInside" id="P5A-UH-lxi"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d5Y-wx-IR0">
+                            <rect key="frame" x="81" y="0.0" width="71.5" height="21"/>
+                            <color key="backgroundColor" red="0.43921568630000002" green="0.43921568630000002" blue="0.43921568630000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="70" id="HlA-Jb-NWj"/>
+                            </constraints>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="Beverages">
+                                <fontDescription key="titleFontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="7"/>
+                                <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </buttonConfiguration>
+                            <connections>
+                                <action selector="foodTypeTapped:" destination="-1" eventType="touchUpInside" id="SlE-0v-Xx3"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TKe-gZ-E78">
+                            <rect key="frame" x="161.5" y="0.0" width="72" height="21"/>
+                            <color key="backgroundColor" red="0.43921568630000002" green="0.43921568630000002" blue="0.43921568630000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="70" id="Gz9-UC-3xM"/>
+                            </constraints>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="Desserts">
+                                <fontDescription key="titleFontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="7"/>
+                                <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </buttonConfiguration>
+                            <connections>
+                                <action selector="foodTypeTapped:" destination="-1" eventType="touchUpInside" id="c6p-iX-tgG"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lg1-aw-V4Z">
+                            <rect key="frame" x="242.5" y="0.0" width="71.5" height="21"/>
+                            <color key="backgroundColor" red="0.43921568630000002" green="0.43921568630000002" blue="0.43921568630000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="70" id="7Ug-iu-nab"/>
+                            </constraints>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="Promotions">
+                                <fontDescription key="titleFontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="7"/>
+                                <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </buttonConfiguration>
+                            <connections>
+                                <action selector="foodTypeTapped:" destination="-1" eventType="touchUpInside" id="KVd-kC-nY1"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="6s5-fS-PdR"/>
+                    </constraints>
+                </stackView>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="WA5-hb-9k3">
+                    <rect key="frame" x="0.0" y="722" width="414" height="140"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="140" id="qFv-9b-chm"/>
+                    </constraints>
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ZEc-7V-IOU">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="WA5-hb-9k3" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="0ST-FK-41X"/>
+                <constraint firstItem="jdi-Rl-KpL" firstAttribute="bottom" secondItem="VF0-fc-l6r" secondAttribute="bottom" constant="-10" id="1lP-q2-qol"/>
+                <constraint firstItem="uU9-PI-Vd3" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="41Q-YK-fVi"/>
+                <constraint firstItem="fem-xl-kRf" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="50" id="5fP-PR-1K3"/>
+                <constraint firstItem="jdi-Rl-KpL" firstAttribute="leading" secondItem="No1-jK-oGu" secondAttribute="leading" id="6lI-w7-Jef"/>
+                <constraint firstItem="No1-jK-oGu" firstAttribute="trailing" secondItem="VF0-fc-l6r" secondAttribute="trailing" constant="-16" id="IVX-f1-VnO"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="fem-xl-kRf" secondAttribute="trailing" constant="50" id="KlH-wL-KXk"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="vaL-qg-lhf" secondAttribute="trailing" constant="16" id="LId-yb-vDG"/>
+                <constraint firstItem="vaL-qg-lhf" firstAttribute="centerY" secondItem="g4L-k6-gk4" secondAttribute="centerY" id="NAD-DE-HMc"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="VF0-fc-l6r" secondAttribute="trailing" constant="43" id="Ow3-7E-GX7"/>
+                <constraint firstItem="VF0-fc-l6r" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="43" id="P7w-PW-NkL"/>
+                <constraint firstItem="fem-xl-kRf" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Q1J-09-zK8"/>
+                <constraint firstItem="No1-jK-oGu" firstAttribute="leading" secondItem="VF0-fc-l6r" secondAttribute="leading" constant="16" id="Q2f-nR-xNb"/>
+                <constraint firstItem="jdi-Rl-KpL" firstAttribute="trailing" secondItem="No1-jK-oGu" secondAttribute="trailing" id="QSY-JE-ZPN"/>
+                <constraint firstItem="uU9-PI-Vd3" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="RBK-FD-A8V"/>
+                <constraint firstItem="No1-jK-oGu" firstAttribute="top" secondItem="VF0-fc-l6r" secondAttribute="top" constant="12" id="aAB-Aa-iPv"/>
+                <constraint firstItem="WA5-hb-9k3" firstAttribute="top" secondItem="fem-xl-kRf" secondAttribute="bottom" constant="23" id="aaN-5S-BTi"/>
+                <constraint firstItem="WA5-hb-9k3" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="afP-kd-h0E"/>
+                <constraint firstAttribute="bottom" secondItem="uU9-PI-Vd3" secondAttribute="bottom" id="afh-zz-GXK"/>
+                <constraint firstItem="jdi-Rl-KpL" firstAttribute="top" secondItem="No1-jK-oGu" secondAttribute="bottom" constant="20" id="hGf-EF-qyl"/>
+                <constraint firstItem="g4L-k6-gk4" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="jtM-Ia-OYd"/>
+                <constraint firstItem="fem-xl-kRf" firstAttribute="top" secondItem="VF0-fc-l6r" secondAttribute="bottom" constant="20" id="liV-Zr-6ZP"/>
+                <constraint firstItem="uU9-PI-Vd3" firstAttribute="trailing" secondItem="i5M-Pr-FkT" secondAttribute="trailing" id="xJM-G9-Suk"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="WA5-hb-9k3" secondAttribute="trailing" id="yz1-ea-5sm"/>
+                <constraint firstItem="g4L-k6-gk4" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="zJR-mV-vCW"/>
+            </constraints>
+            <point key="canvasLocation" x="131.8840579710145" y="61.607142857142854"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Share" width="18" height="23.5"/>
+        <image name="back" width="7" height="12.5"/>
+        <image name="categoryButton" width="23" height="23"/>
+    </resources>
+</document>

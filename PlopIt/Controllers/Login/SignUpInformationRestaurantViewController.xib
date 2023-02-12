@@ -1,0 +1,876 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Regular.ttf">
+            <string>Poppins-Regular</string>
+        </array>
+        <array key="Poppins-SemiBold.ttf">
+            <string>Poppins-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SignUpInformationRestaurantViewController" customModule="PlopIt" customModuleProvider="target">
+            <connections>
+                <outlet property="addHeader" destination="SYg-By-Iab" id="s4c-OF-nuW"/>
+                <outlet property="addressCityView" destination="59D-A8-47v" id="s6A-iq-8HN"/>
+                <outlet property="addressStateView" destination="2B3-fC-6sQ" id="siU-aY-aHv"/>
+                <outlet property="addressStreetView" destination="H4d-C2-Kka" id="ua1-Av-UfQ"/>
+                <outlet property="addressZipView" destination="XHE-gr-cd1" id="ogl-GN-cyB"/>
+                <outlet property="backButton" destination="U3F-Vp-iTx" id="LOT-rh-0uJ"/>
+                <outlet property="descriptionView" destination="708-yS-BzV" id="jb7-Wv-sYS"/>
+                <outlet property="dietaryView" destination="x9y-mi-t0o" id="HU5-3D-zlR"/>
+                <outlet property="editButton" destination="RHH-u6-SSx" id="gIg-Uf-wz2"/>
+                <outlet property="fridayToggle" destination="bzR-P5-lX9" id="g2p-kw-UHg"/>
+                <outlet property="fridayView" destination="8rQ-Qz-QG4" id="Cot-t8-gRe"/>
+                <outlet property="frontPageAddedImageView" destination="so4-L7-cAp" id="ou2-Pl-w2s"/>
+                <outlet property="frontPageHeaderView" destination="fd9-rV-YJE" id="TMB-6d-81l"/>
+                <outlet property="genreView" destination="aw6-Ed-YPU" id="eJW-HY-t8P"/>
+                <outlet property="hoursClosedFriday" destination="w9Q-K3-x40" id="Oze-2Y-h7t"/>
+                <outlet property="hoursClosedMonday" destination="miO-iY-hFJ" id="FzF-IN-lFY"/>
+                <outlet property="hoursClosedSaturday" destination="QCE-wr-uY8" id="6Oj-NZ-NnH"/>
+                <outlet property="hoursClosedSunday" destination="7Kc-6q-Kg9" id="U67-hD-ZNA"/>
+                <outlet property="hoursClosedThursday" destination="fu2-1T-MYW" id="oXE-Ey-SGz"/>
+                <outlet property="hoursClosedTuesday" destination="buk-zv-SNZ" id="Yjm-7v-oqy"/>
+                <outlet property="hoursClosedWednesday" destination="VI2-wT-gko" id="Brw-Kb-HFC"/>
+                <outlet property="hoursOpenFriday" destination="7ob-jD-981" id="R7Q-6K-uXb"/>
+                <outlet property="hoursOpenMonday" destination="dRP-vh-4hn" id="g0e-cG-ZoO"/>
+                <outlet property="hoursOpenSaturday" destination="rRx-mn-Lad" id="ZGb-X9-IWh"/>
+                <outlet property="hoursOpenSunday" destination="0je-Dq-N1C" id="eL8-5m-Bop"/>
+                <outlet property="hoursOpenThursday" destination="j9m-As-xao" id="cMc-sw-280"/>
+                <outlet property="hoursOpenTuesday" destination="Ycb-rJ-8SM" id="mT8-GM-to1"/>
+                <outlet property="hoursOpenWednesday" destination="pvI-Qd-chn" id="Ks5-9e-XND"/>
+                <outlet property="hoursToggle" destination="DPx-Vt-4ao" id="aEc-fB-BcX"/>
+                <outlet property="hoursView" destination="fkb-ky-84q" id="6sW-ek-kYJ"/>
+                <outlet property="menuHeader" destination="isF-z2-ijc" id="3Ut-dd-eKM"/>
+                <outlet property="menuHeaderAddedImageView" destination="1wp-e1-tSO" id="1FS-ia-QWy"/>
+                <outlet property="menuHeaderView" destination="hkO-eV-DzV" id="FKv-dq-kEt"/>
+                <outlet property="mondayToggle" destination="Drt-1T-F4p" id="8a1-Jt-Na7"/>
+                <outlet property="mondayView" destination="c1y-q5-e8a" id="WTX-l8-Qy7"/>
+                <outlet property="phoneNumberView" destination="ic6-8Y-4gm" id="tNK-lC-tjy"/>
+                <outlet property="priceView" destination="zZS-mf-Vlb" id="8ER-4e-8ST"/>
+                <outlet property="restaurantLabel" destination="yAg-QJ-JzH" id="3ZR-bj-nQf"/>
+                <outlet property="restaurantSignupLabel" destination="Ok0-K5-ove" id="RU9-tQ-srt"/>
+                <outlet property="restaurantView" destination="o8X-N6-gmo" id="6Nj-wF-G6C"/>
+                <outlet property="saturdayToggle" destination="FJI-JY-pOe" id="IFX-BT-J85"/>
+                <outlet property="saturdayView" destination="cVb-4K-IPo" id="Afd-0F-Ypj"/>
+                <outlet property="signUpButton" destination="PU8-so-BrF" id="2w3-FJ-dES"/>
+                <outlet property="sundayToggle" destination="VDQ-0n-MXO" id="anD-kR-9pf"/>
+                <outlet property="sundayView" destination="HC7-PX-Ff0" id="UI5-Tn-YHP"/>
+                <outlet property="thursdayToggle" destination="jgD-Ou-9h0" id="qOf-vR-ZXu"/>
+                <outlet property="thursdayView" destination="o2f-ss-SnC" id="mhd-Gg-M61"/>
+                <outlet property="tuesdayToggle" destination="dCz-z4-mbE" id="hHP-Li-mlf"/>
+                <outlet property="tuesdayView" destination="hIE-2R-cYh" id="bwM-27-OLb"/>
+                <outlet property="uploadFrontPageHeaderButton" destination="ia8-Gr-mEf" id="Pjn-iB-zx3"/>
+                <outlet property="uploadMenuButton" destination="ERh-9i-f1s" id="3Vi-Uw-8Vm"/>
+                <outlet property="view" destination="kIl-5b-myN" id="kdh-s9-xDT"/>
+                <outlet property="websiteView" destination="Rsg-UN-Z9c" id="SKT-Oy-wT8"/>
+                <outlet property="wednesdayToggle" destination="ORO-di-oak" id="xN8-K5-g19"/>
+                <outlet property="wednesdayView" destination="xZa-Ed-bfR" id="59L-mE-nqv"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="kIl-5b-myN">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u9a-P7-SK4">
+                    <rect key="frame" x="0.0" y="0.0" width="761" height="896"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qqN-41-Bis">
+                            <rect key="frame" x="0.0" y="0.0" width="761" height="4106"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="EkG-Kg-zpM">
+                                    <rect key="frame" x="30" y="10" width="701" height="4096"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Restaurant Signup" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yAg-QJ-JzH">
+                                            <rect key="frame" x="0.0" y="0.0" width="701" height="42"/>
+                                            <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="30"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please fill out the form below with all of your restaurant details. We will get back to you shortly." lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ok0-K5-ove">
+                                            <rect key="frame" x="0.0" y="67" width="701" height="21"/>
+                                            <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="15"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o8X-N6-gmo" userLabel="restaurantView" customClass="ImageTextFieldView" customModule="PlopIt" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="113" width="701" height="50"/>
+                                        </view>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Restaurant Address" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xup-Nq-DVx">
+                                            <rect key="frame" x="0.0" y="188" width="701" height="21"/>
+                                            <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="15"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H4d-C2-Kka" userLabel="addressStreetView" customClass="ImageTextFieldView" customModule="PlopIt" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="234" width="701" height="50"/>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="59D-A8-47v" userLabel="addressCityView" customClass="ImageTextFieldView" customModule="PlopIt" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="309" width="701" height="50"/>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2B3-fC-6sQ" userLabel="addressStateView" customClass="ImageTextFieldView" customModule="PlopIt" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="384" width="701" height="50"/>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XHE-gr-cd1" userLabel="addressZipView" customClass="ImageTextFieldView" customModule="PlopIt" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="459" width="701" height="50"/>
+                                        </view>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Additional Information" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wzh-B4-aod">
+                                            <rect key="frame" x="0.0" y="534" width="701" height="21"/>
+                                            <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="15"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="708-yS-BzV" userLabel="descriptionView" customClass="ImageTextFieldView" customModule="PlopIt" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="580" width="701" height="51"/>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ic6-8Y-4gm" userLabel="phoneNumberView" customClass="ImageTextFieldView" customModule="PlopIt" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="656" width="701" height="50"/>
+                                        </view>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Optional Information" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="deU-2u-Rtj" userLabel="Optional Information">
+                                            <rect key="frame" x="0.0" y="731" width="701" height="21"/>
+                                            <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="15"/>
+                                            <color key="textColor" name="gray"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="zZS-mf-Vlb" userLabel="priceView">
+                                            <rect key="frame" x="0.0" y="777" width="701" height="32"/>
+                                            <segments>
+                                                <segment title="$"/>
+                                                <segment title="$$"/>
+                                                <segment title="$$$"/>
+                                            </segments>
+                                            <connections>
+                                                <action selector="pricingSwitcher:" destination="-1" eventType="valueChanged" id="5Bt-CM-b1q"/>
+                                            </connections>
+                                        </segmentedControl>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uzy-Eu-SAC" userLabel="pricingView" customClass="ImageTextFieldView" customModule="PlopIt" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="833" width="701" height="50"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r5P-5R-QMp" userLabel="pricingView" customClass="BetterSegmentedControl" customModule="PlopIt" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="777" width="701" height="128"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rsg-UN-Z9c" userLabel="websiteView" customClass="ImageTextFieldView" customModule="PlopIt" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="833" width="701" height="50"/>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aw6-Ed-YPU" customClass="ImageTextFieldView" customModule="PlopIt" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="908" width="701" height="128"/>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x9y-mi-t0o" customClass="ImageTextFieldView" customModule="PlopIt" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="1061" width="701" height="128"/>
+                                        </view>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Front Page Header" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Vw-dX-kng" userLabel="Front Page Header">
+                                            <rect key="frame" x="0.0" y="1214" width="701" height="21"/>
+                                            <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="15"/>
+                                            <color key="textColor" name="gray"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fd9-rV-YJE" userLabel="FrontPageHeader">
+                                            <rect key="frame" x="0.0" y="1260" width="701" height="230"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="upload" translatesAutoresizingMaskIntoConstraints="NO" id="buN-hm-0Py">
+                                                    <rect key="frame" x="0.0" y="0.0" width="41" height="41"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="41" id="Ers-47-6La"/>
+                                                        <constraint firstAttribute="width" constant="41" id="Ftg-Yc-dP4"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="so4-L7-cAp">
+                                                    <rect key="frame" x="0.0" y="0.0" width="701" height="230"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </imageView>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ia8-Gr-mEf">
+                                                    <rect key="frame" x="0.0" y="0.0" width="701" height="230"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="230" id="8y8-95-O1U"/>
+                                                    </constraints>
+                                                    <state key="normal" title="Button"/>
+                                                    <buttonConfiguration key="configuration" style="plain" title=""/>
+                                                    <connections>
+                                                        <action selector="restaurantThumbnailImageTapped:" destination="-1" eventType="touchUpInside" id="fht-go-I2f"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="230" id="1zI-61-6nF"/>
+                                                <constraint firstItem="so4-L7-cAp" firstAttribute="top" secondItem="fd9-rV-YJE" secondAttribute="top" id="9Qf-3a-N2C"/>
+                                                <constraint firstAttribute="trailing" secondItem="so4-L7-cAp" secondAttribute="trailing" id="J9a-iN-71d"/>
+                                                <constraint firstItem="buN-hm-0Py" firstAttribute="centerX" secondItem="fd9-rV-YJE" secondAttribute="centerX" id="L4U-k0-irc"/>
+                                                <constraint firstAttribute="trailing" secondItem="buN-hm-0Py" secondAttribute="trailing" id="P6j-xN-pnA"/>
+                                                <constraint firstItem="buN-hm-0Py" firstAttribute="leading" secondItem="fd9-rV-YJE" secondAttribute="leading" id="Qs2-5q-Hnd"/>
+                                                <constraint firstItem="ia8-Gr-mEf" firstAttribute="leading" secondItem="fd9-rV-YJE" secondAttribute="leading" id="XcV-Rw-yM1"/>
+                                                <constraint firstAttribute="bottom" secondItem="so4-L7-cAp" secondAttribute="bottom" id="cI8-0v-4tA"/>
+                                                <constraint firstItem="so4-L7-cAp" firstAttribute="leading" secondItem="fd9-rV-YJE" secondAttribute="leading" id="ctJ-ou-EaR"/>
+                                                <constraint firstItem="ia8-Gr-mEf" firstAttribute="top" secondItem="fd9-rV-YJE" secondAttribute="top" id="cvp-fL-bll"/>
+                                                <constraint firstItem="buN-hm-0Py" firstAttribute="top" secondItem="fd9-rV-YJE" secondAttribute="top" id="dKX-vJ-evk"/>
+                                                <constraint firstAttribute="bottom" secondItem="ia8-Gr-mEf" secondAttribute="bottom" id="g2P-Xt-jC3"/>
+                                                <constraint firstItem="buN-hm-0Py" firstAttribute="centerY" secondItem="fd9-rV-YJE" secondAttribute="centerY" id="mB8-E8-ALv"/>
+                                                <constraint firstAttribute="trailing" secondItem="ia8-Gr-mEf" secondAttribute="trailing" id="wSQ-dJ-FbU"/>
+                                                <constraint firstAttribute="bottom" secondItem="buN-hm-0Py" secondAttribute="bottom" id="wd1-84-KPN"/>
+                                            </constraints>
+                                        </view>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Front Page Header" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sYU-P4-ca7" userLabel="Front Page Header">
+                                            <rect key="frame" x="0.0" y="1515" width="701" height="21"/>
+                                            <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="15"/>
+                                            <color key="textColor" name="gray"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3MF-Ra-d5b" userLabel="MenuHeader">
+                                            <rect key="frame" x="0.0" y="1561" width="701" height="141"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="upload" translatesAutoresizingMaskIntoConstraints="NO" id="62c-tb-Rfv">
+                                                    <rect key="frame" x="0.0" y="0.0" width="701" height="141"/>
+                                                </imageView>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1wp-e1-tSO">
+                                                    <rect key="frame" x="0.0" y="0.0" width="701" height="141"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </imageView>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ERh-9i-f1s">
+                                                    <rect key="frame" x="0.0" y="0.0" width="701" height="141"/>
+                                                    <state key="normal" title="Button"/>
+                                                    <buttonConfiguration key="configuration" style="plain"/>
+                                                    <connections>
+                                                        <action selector="restaurantHeaderImageTapped:" destination="-1" eventType="touchUpInside" id="8c0-cY-mm3"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="62c-tb-Rfv" secondAttribute="bottom" id="3hm-d3-toL"/>
+                                                <constraint firstAttribute="trailing" secondItem="62c-tb-Rfv" secondAttribute="trailing" id="Iy1-8w-Din"/>
+                                                <constraint firstItem="62c-tb-Rfv" firstAttribute="top" secondItem="3MF-Ra-d5b" secondAttribute="top" id="MFK-CC-KLe"/>
+                                                <constraint firstItem="62c-tb-Rfv" firstAttribute="centerY" secondItem="3MF-Ra-d5b" secondAttribute="centerY" id="QjG-fP-7LO"/>
+                                                <constraint firstAttribute="trailing" secondItem="1wp-e1-tSO" secondAttribute="trailing" id="WIt-mZ-DQX"/>
+                                                <constraint firstItem="1wp-e1-tSO" firstAttribute="top" secondItem="3MF-Ra-d5b" secondAttribute="top" id="WtK-oZ-6Tu"/>
+                                                <constraint firstItem="1wp-e1-tSO" firstAttribute="leading" secondItem="3MF-Ra-d5b" secondAttribute="leading" id="eD9-wr-W6X"/>
+                                                <constraint firstAttribute="bottom" secondItem="1wp-e1-tSO" secondAttribute="bottom" id="eT8-AX-3m3"/>
+                                                <constraint firstItem="62c-tb-Rfv" firstAttribute="leading" secondItem="3MF-Ra-d5b" secondAttribute="leading" id="gA1-Cg-TiR"/>
+                                                <constraint firstItem="ERh-9i-f1s" firstAttribute="top" secondItem="3MF-Ra-d5b" secondAttribute="top" id="hZg-az-401"/>
+                                                <constraint firstAttribute="bottom" secondItem="ERh-9i-f1s" secondAttribute="bottom" id="kqH-ox-FYX"/>
+                                                <constraint firstAttribute="height" constant="141" id="oia-eO-nno"/>
+                                                <constraint firstAttribute="trailing" secondItem="ERh-9i-f1s" secondAttribute="trailing" id="qs8-xc-FA4"/>
+                                                <constraint firstItem="62c-tb-Rfv" firstAttribute="centerX" secondItem="3MF-Ra-d5b" secondAttribute="centerX" id="ryU-sr-vTv"/>
+                                                <constraint firstItem="ERh-9i-f1s" firstAttribute="leading" secondItem="3MF-Ra-d5b" secondAttribute="leading" id="vqW-nU-Jn1"/>
+                                            </constraints>
+                                        </view>
+                                        <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hsR-xS-9Ip" userLabel="Display HoursofOperation">
+                                            <rect key="frame" x="0.0" y="1727" width="701" height="31"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hours of Operation" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OJ7-QL-m8u">
+                                                    <rect key="frame" x="0.0" y="0.0" width="652" height="31"/>
+                                                    <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="15"/>
+                                                    <color key="textColor" name="gray"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DPx-Vt-4ao" userLabel="Display Hours of Operation">
+                                                    <rect key="frame" x="652" y="0.0" width="51" height="31"/>
+                                                    <color key="onTintColor" name="green"/>
+                                                    <connections>
+                                                        <action selector="hideHours:" destination="-1" eventType="valueChanged" id="4Fc-Al-3AD"/>
+                                                    </connections>
+                                                </switch>
+                                            </subviews>
+                                        </stackView>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="fkb-ky-84q" userLabel="Hours of Operation">
+                                            <rect key="frame" x="0.0" y="1783" width="701" height="2054"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="ezK-N9-c2I" userLabel="Monday">
+                                                    <rect key="frame" x="0.0" y="0.0" width="701" height="272"/>
+                                                    <subviews>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="flu-hb-W6Y">
+                                                            <rect key="frame" x="0.0" y="0.0" width="701" height="31"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Monday" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QrZ-ez-hsf">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="350.5" height="31"/>
+                                                                    <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="15"/>
+                                                                    <color key="textColor" name="gray"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Open/Closed" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rf8-aw-AFH" userLabel="Open/Closed">
+                                                                    <rect key="frame" x="350.5" y="0.0" width="301.5" height="31"/>
+                                                                    <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="15"/>
+                                                                    <color key="textColor" name="gray"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Drt-1T-F4p" userLabel="Open/Closed">
+                                                                    <rect key="frame" x="652" y="0.0" width="51" height="31"/>
+                                                                    <color key="onTintColor" name="red"/>
+                                                                    <connections>
+                                                                        <action selector="operationClosed:" destination="-1" eventType="valueChanged" id="Beq-0L-YHS"/>
+                                                                    </connections>
+                                                                </switch>
+                                                            </subviews>
+                                                            <constraints>
+                                                                <constraint firstAttribute="trailing" secondItem="Drt-1T-F4p" secondAttribute="trailing" id="G4R-id-cAF"/>
+                                                                <constraint firstItem="Drt-1T-F4p" firstAttribute="leading" secondItem="rf8-aw-AFH" secondAttribute="trailing" id="fRz-rq-cQV"/>
+                                                            </constraints>
+                                                        </stackView>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c1y-q5-e8a">
+                                                            <rect key="frame" x="0.0" y="56" width="701" height="216"/>
+                                                            <subviews>
+                                                                <datePicker contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dRP-vh-4hn">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="357.5" height="216"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="168" id="pg1-pr-B5G"/>
+                                                                    </constraints>
+                                                                    <date key="date" timeIntervalSinceReferenceDate="672141600.85455596">
+                                                                        <!--2022-04-20 10:00:00 +0000-->
+                                                                    </date>
+                                                                </datePicker>
+                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="minus" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="4Gh-rC-e33">
+                                                                    <rect key="frame" x="357.5" y="6.5" width="23.5" height="203"/>
+                                                                    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="18" id="FIW-CX-UuC"/>
+                                                                    </constraints>
+                                                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large" weight="bold"/>
+                                                                </imageView>
+                                                                <datePicker contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="miO-iY-hFJ">
+                                                                    <rect key="frame" x="381" y="0.0" width="320" height="216"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="168" id="alA-DJ-xYZ"/>
+                                                                    </constraints>
+                                                                    <date key="date" timeIntervalSinceReferenceDate="672199200.85455596">
+                                                                        <!--2022-04-21 02:00:00 +0000-->
+                                                                    </date>
+                                                                </datePicker>
+                                                            </subviews>
+                                                            <constraints>
+                                                                <constraint firstItem="4Gh-rC-e33" firstAttribute="leading" secondItem="dRP-vh-4hn" secondAttribute="trailing" constant="20" id="2d2-gB-c2w"/>
+                                                            </constraints>
+                                                        </stackView>
+                                                    </subviews>
+                                                </stackView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="KYc-Kc-nt4" userLabel="Tuesday">
+                                                    <rect key="frame" x="0.0" y="297" width="701" height="272"/>
+                                                    <subviews>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Csv-ij-AlI">
+                                                            <rect key="frame" x="0.0" y="0.0" width="701" height="31"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Tuesday" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ObX-Y2-Vtn" userLabel="Tuesday">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="350.5" height="31"/>
+                                                                    <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="15"/>
+                                                                    <color key="textColor" name="gray"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Open/Closed" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IQ4-on-ygL" userLabel="Open/Closed">
+                                                                    <rect key="frame" x="350.5" y="0.0" width="301.5" height="31"/>
+                                                                    <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="15"/>
+                                                                    <color key="textColor" name="gray"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="dCz-z4-mbE" userLabel="Open/Closed">
+                                                                    <rect key="frame" x="652" y="0.0" width="51" height="31"/>
+                                                                    <color key="onTintColor" name="red"/>
+                                                                    <connections>
+                                                                        <action selector="operationClosed:" destination="-1" eventType="valueChanged" id="E1k-bB-giO"/>
+                                                                    </connections>
+                                                                </switch>
+                                                            </subviews>
+                                                            <constraints>
+                                                                <constraint firstAttribute="trailing" secondItem="dCz-z4-mbE" secondAttribute="trailing" id="GhI-Fa-nmZ"/>
+                                                                <constraint firstItem="dCz-z4-mbE" firstAttribute="leading" secondItem="IQ4-on-ygL" secondAttribute="trailing" id="jMK-Hu-H0H"/>
+                                                            </constraints>
+                                                        </stackView>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hIE-2R-cYh">
+                                                            <rect key="frame" x="0.0" y="56" width="701" height="216"/>
+                                                            <subviews>
+                                                                <datePicker contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ycb-rJ-8SM">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="320" height="216"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="168" id="gAM-PT-eHO"/>
+                                                                    </constraints>
+                                                                    <date key="date" timeIntervalSinceReferenceDate="672141600.85455596">
+                                                                        <!--2022-04-20 10:00:00 +0000-->
+                                                                    </date>
+                                                                </datePicker>
+                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="minus" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="9E2-wP-riN">
+                                                                    <rect key="frame" x="320" y="6.5" width="23.5" height="203"/>
+                                                                    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="18" id="Q3y-Gs-9LJ"/>
+                                                                    </constraints>
+                                                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large" weight="bold"/>
+                                                                </imageView>
+                                                                <datePicker contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="buk-zv-SNZ">
+                                                                    <rect key="frame" x="343.5" y="0.0" width="357.5" height="216"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="168" id="RCW-ZX-Zrv"/>
+                                                                    </constraints>
+                                                                    <date key="date" timeIntervalSinceReferenceDate="672199200.85455596">
+                                                                        <!--2022-04-21 02:00:00 +0000-->
+                                                                    </date>
+                                                                </datePicker>
+                                                            </subviews>
+                                                        </stackView>
+                                                    </subviews>
+                                                </stackView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="oo7-fg-1rM" userLabel="Wednesday">
+                                                    <rect key="frame" x="0.0" y="594" width="701" height="272"/>
+                                                    <subviews>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y4b-NF-JtQ">
+                                                            <rect key="frame" x="0.0" y="0.0" width="701" height="31"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Wednesday" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JHP-wf-BTH" userLabel="Wednesday">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="350.5" height="31"/>
+                                                                    <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="15"/>
+                                                                    <color key="textColor" name="gray"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Open/Closed" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BpY-QI-rvd" userLabel="Open/Closed">
+                                                                    <rect key="frame" x="350.5" y="0.0" width="301.5" height="31"/>
+                                                                    <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="15"/>
+                                                                    <color key="textColor" name="gray"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ORO-di-oak" userLabel="Open/Closed">
+                                                                    <rect key="frame" x="652" y="0.0" width="51" height="31"/>
+                                                                    <color key="onTintColor" name="red"/>
+                                                                    <connections>
+                                                                        <action selector="operationClosed:" destination="-1" eventType="valueChanged" id="fmM-UQ-g1r"/>
+                                                                    </connections>
+                                                                </switch>
+                                                            </subviews>
+                                                            <constraints>
+                                                                <constraint firstAttribute="trailing" secondItem="ORO-di-oak" secondAttribute="trailing" id="7Bq-gw-Aid"/>
+                                                                <constraint firstItem="ORO-di-oak" firstAttribute="leading" secondItem="BpY-QI-rvd" secondAttribute="trailing" id="mBQ-G2-prF"/>
+                                                            </constraints>
+                                                        </stackView>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xZa-Ed-bfR">
+                                                            <rect key="frame" x="0.0" y="56" width="701" height="216"/>
+                                                            <subviews>
+                                                                <datePicker contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pvI-Qd-chn">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="363" height="216"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="168" id="kHc-TQ-H6H"/>
+                                                                    </constraints>
+                                                                    <date key="date" timeIntervalSinceReferenceDate="672141600.85455596">
+                                                                        <!--2022-04-20 10:00:00 +0000-->
+                                                                    </date>
+                                                                </datePicker>
+                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="minus" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="cr9-w5-bfm">
+                                                                    <rect key="frame" x="363" y="6.5" width="18" height="203"/>
+                                                                    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="18" id="rJh-sg-f5e"/>
+                                                                    </constraints>
+                                                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large" weight="bold"/>
+                                                                </imageView>
+                                                                <datePicker contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VI2-wT-gko">
+                                                                    <rect key="frame" x="381" y="0.0" width="320" height="216"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="168" id="Pzb-QC-Op4"/>
+                                                                    </constraints>
+                                                                    <date key="date" timeIntervalSinceReferenceDate="672199200.85455596">
+                                                                        <!--2022-04-21 02:00:00 +0000-->
+                                                                    </date>
+                                                                </datePicker>
+                                                            </subviews>
+                                                        </stackView>
+                                                    </subviews>
+                                                </stackView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="Kfe-1N-a4Y" userLabel="Thursday">
+                                                    <rect key="frame" x="0.0" y="891" width="701" height="272"/>
+                                                    <subviews>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jj6-qC-4W5">
+                                                            <rect key="frame" x="0.0" y="0.0" width="701" height="31"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Thursday" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6IU-vy-Bdd">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="350.5" height="31"/>
+                                                                    <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="15"/>
+                                                                    <color key="textColor" name="gray"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Open/Closed" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vC0-gt-Ioq" userLabel="Open/Closed">
+                                                                    <rect key="frame" x="350.5" y="0.0" width="301.5" height="31"/>
+                                                                    <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="15"/>
+                                                                    <color key="textColor" name="gray"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="jgD-Ou-9h0" userLabel="Open/Closed">
+                                                                    <rect key="frame" x="652" y="0.0" width="51" height="31"/>
+                                                                    <color key="onTintColor" name="red"/>
+                                                                    <connections>
+                                                                        <action selector="operationClosed:" destination="-1" eventType="valueChanged" id="Xq6-jR-B6m"/>
+                                                                    </connections>
+                                                                </switch>
+                                                            </subviews>
+                                                            <constraints>
+                                                                <constraint firstAttribute="trailing" secondItem="jgD-Ou-9h0" secondAttribute="trailing" id="2dU-h8-3gI"/>
+                                                                <constraint firstItem="jgD-Ou-9h0" firstAttribute="leading" secondItem="vC0-gt-Ioq" secondAttribute="trailing" id="bzN-MA-JOc"/>
+                                                            </constraints>
+                                                        </stackView>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o2f-ss-SnC">
+                                                            <rect key="frame" x="0.0" y="56" width="701" height="216"/>
+                                                            <subviews>
+                                                                <datePicker contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j9m-As-xao">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="357.5" height="216"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="168" id="Gou-0K-vED" userLabel="width = 168"/>
+                                                                    </constraints>
+                                                                    <date key="date" timeIntervalSinceReferenceDate="672141600.85455596">
+                                                                        <!--2022-04-20 10:00:00 +0000-->
+                                                                    </date>
+                                                                </datePicker>
+                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="minus" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="wyP-SE-btl">
+                                                                    <rect key="frame" x="357.5" y="6.5" width="23.5" height="203"/>
+                                                                    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="18" id="XxF-zN-uSf"/>
+                                                                    </constraints>
+                                                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large" weight="bold"/>
+                                                                </imageView>
+                                                                <datePicker contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fu2-1T-MYW">
+                                                                    <rect key="frame" x="381" y="0.0" width="320" height="216"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="168" id="hUq-Ss-7e5"/>
+                                                                    </constraints>
+                                                                    <date key="date" timeIntervalSinceReferenceDate="672199200.85455596">
+                                                                        <!--2022-04-21 02:00:00 +0000-->
+                                                                    </date>
+                                                                </datePicker>
+                                                            </subviews>
+                                                        </stackView>
+                                                    </subviews>
+                                                </stackView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="uGk-Ed-yIX" userLabel="Friday">
+                                                    <rect key="frame" x="0.0" y="1188" width="701" height="272"/>
+                                                    <subviews>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oeW-TP-DX7">
+                                                            <rect key="frame" x="0.0" y="0.0" width="701" height="31"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Friday" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X7x-36-ddz" userLabel="Friday">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="350.5" height="31"/>
+                                                                    <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="15"/>
+                                                                    <color key="textColor" name="gray"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Open/Closed" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FOf-E7-s6S" userLabel="Open/Closed">
+                                                                    <rect key="frame" x="350.5" y="0.0" width="301.5" height="31"/>
+                                                                    <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="15"/>
+                                                                    <color key="textColor" name="gray"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="bzR-P5-lX9" userLabel="Open/Closed">
+                                                                    <rect key="frame" x="652" y="0.0" width="51" height="31"/>
+                                                                    <color key="onTintColor" name="red"/>
+                                                                    <connections>
+                                                                        <action selector="operationClosed:" destination="-1" eventType="valueChanged" id="4Xf-Nw-0XD"/>
+                                                                    </connections>
+                                                                </switch>
+                                                            </subviews>
+                                                            <constraints>
+                                                                <constraint firstAttribute="trailing" secondItem="bzR-P5-lX9" secondAttribute="trailing" id="WbF-U6-Ddo"/>
+                                                                <constraint firstItem="bzR-P5-lX9" firstAttribute="leading" secondItem="FOf-E7-s6S" secondAttribute="trailing" id="lTr-93-k0Z"/>
+                                                            </constraints>
+                                                        </stackView>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8rQ-Qz-QG4">
+                                                            <rect key="frame" x="0.0" y="56" width="701" height="216"/>
+                                                            <subviews>
+                                                                <datePicker contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7ob-jD-981">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="320" height="216"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="168" id="tKs-Qe-pL8"/>
+                                                                    </constraints>
+                                                                    <date key="date" timeIntervalSinceReferenceDate="672141600.85455596">
+                                                                        <!--2022-04-20 10:00:00 +0000-->
+                                                                    </date>
+                                                                </datePicker>
+                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="minus" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Sul-ei-VtM">
+                                                                    <rect key="frame" x="320" y="6.5" width="23.5" height="203"/>
+                                                                    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="18" id="yvS-1O-DE5"/>
+                                                                    </constraints>
+                                                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large" weight="bold"/>
+                                                                </imageView>
+                                                                <datePicker contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w9Q-K3-x40">
+                                                                    <rect key="frame" x="343.5" y="0.0" width="357.5" height="216"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="168" id="BXh-Rw-HxM"/>
+                                                                    </constraints>
+                                                                    <date key="date" timeIntervalSinceReferenceDate="672199200.85455596">
+                                                                        <!--2022-04-21 02:00:00 +0000-->
+                                                                    </date>
+                                                                </datePicker>
+                                                            </subviews>
+                                                        </stackView>
+                                                    </subviews>
+                                                </stackView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="zKX-Xs-mzw" userLabel="Saturday">
+                                                    <rect key="frame" x="0.0" y="1485" width="701" height="272"/>
+                                                    <subviews>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VmF-Ha-scl">
+                                                            <rect key="frame" x="0.0" y="0.0" width="701" height="31"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Saturday" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MpB-T2-AGo" userLabel="Saturday">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="350.5" height="31"/>
+                                                                    <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="15"/>
+                                                                    <color key="textColor" name="gray"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Open/Closed" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tou-zd-J1I" userLabel="Open/Closed">
+                                                                    <rect key="frame" x="350.5" y="0.0" width="301.5" height="31"/>
+                                                                    <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="15"/>
+                                                                    <color key="textColor" name="gray"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="FJI-JY-pOe" userLabel="Open/Closed">
+                                                                    <rect key="frame" x="652" y="0.0" width="51" height="31"/>
+                                                                    <color key="onTintColor" name="red"/>
+                                                                    <connections>
+                                                                        <action selector="operationClosed:" destination="-1" eventType="valueChanged" id="iAK-PF-jzJ"/>
+                                                                    </connections>
+                                                                </switch>
+                                                            </subviews>
+                                                            <constraints>
+                                                                <constraint firstItem="FJI-JY-pOe" firstAttribute="leading" secondItem="tou-zd-J1I" secondAttribute="trailing" id="4hH-gZ-Oti"/>
+                                                                <constraint firstAttribute="trailing" secondItem="FJI-JY-pOe" secondAttribute="trailing" id="eWc-LM-djw"/>
+                                                            </constraints>
+                                                        </stackView>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cVb-4K-IPo">
+                                                            <rect key="frame" x="0.0" y="56" width="701" height="216"/>
+                                                            <subviews>
+                                                                <datePicker contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rRx-mn-Lad">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="357.5" height="216"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="168" id="Xgr-Tq-qQJ"/>
+                                                                    </constraints>
+                                                                    <date key="date" timeIntervalSinceReferenceDate="672141600.85455596">
+                                                                        <!--2022-04-20 10:00:00 +0000-->
+                                                                    </date>
+                                                                </datePicker>
+                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="minus" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="tsH-rr-IrO">
+                                                                    <rect key="frame" x="357.5" y="6.5" width="23.5" height="203"/>
+                                                                    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="18" id="Rka-d0-yr7"/>
+                                                                    </constraints>
+                                                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large" weight="bold"/>
+                                                                </imageView>
+                                                                <datePicker contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QCE-wr-uY8">
+                                                                    <rect key="frame" x="381" y="0.0" width="320" height="216"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="168" id="9QI-uE-OoR"/>
+                                                                    </constraints>
+                                                                    <date key="date" timeIntervalSinceReferenceDate="672199200.85455596">
+                                                                        <!--2022-04-21 02:00:00 +0000-->
+                                                                    </date>
+                                                                </datePicker>
+                                                            </subviews>
+                                                        </stackView>
+                                                    </subviews>
+                                                </stackView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="a0u-Aq-6LM" userLabel="Sunday">
+                                                    <rect key="frame" x="0.0" y="1782" width="701" height="272"/>
+                                                    <subviews>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="csL-df-YtK">
+                                                            <rect key="frame" x="0.0" y="0.0" width="701" height="31"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Sunday" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hAK-AF-8gE">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="350.5" height="31"/>
+                                                                    <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="15"/>
+                                                                    <color key="textColor" name="gray"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Open/Closed" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iGn-HW-BFU" userLabel="Open/Closed">
+                                                                    <rect key="frame" x="350.5" y="0.0" width="301.5" height="31"/>
+                                                                    <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="15"/>
+                                                                    <color key="textColor" name="gray"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="VDQ-0n-MXO" userLabel="Open/Closed">
+                                                                    <rect key="frame" x="652" y="0.0" width="51" height="31"/>
+                                                                    <color key="onTintColor" name="red"/>
+                                                                    <connections>
+                                                                        <action selector="operationClosed:" destination="-1" eventType="valueChanged" id="6De-bT-NwU"/>
+                                                                    </connections>
+                                                                </switch>
+                                                            </subviews>
+                                                            <constraints>
+                                                                <constraint firstAttribute="trailing" secondItem="VDQ-0n-MXO" secondAttribute="trailing" id="DS3-gx-yeh"/>
+                                                                <constraint firstItem="VDQ-0n-MXO" firstAttribute="leading" secondItem="iGn-HW-BFU" secondAttribute="trailing" id="ZIJ-4p-s6z"/>
+                                                            </constraints>
+                                                        </stackView>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HC7-PX-Ff0">
+                                                            <rect key="frame" x="0.0" y="56" width="701" height="216"/>
+                                                            <subviews>
+                                                                <datePicker contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0je-Dq-N1C">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="357.5" height="216"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="168" id="Qnu-nr-8fm"/>
+                                                                    </constraints>
+                                                                    <date key="date" timeIntervalSinceReferenceDate="672184800.85455596">
+                                                                        <!--2022-04-20 22:00:00 +0000-->
+                                                                    </date>
+                                                                    <date key="minimumDate" timeIntervalSinceReferenceDate="-978267600">
+                                                                        <!--1970-01-01 11:00:00 +0000-->
+                                                                    </date>
+                                                                </datePicker>
+                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="minus" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Xbb-7l-Qtn">
+                                                                    <rect key="frame" x="357.5" y="6.5" width="23.5" height="203"/>
+                                                                    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="18" id="Pgc-3v-vxg"/>
+                                                                    </constraints>
+                                                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large" weight="bold"/>
+                                                                </imageView>
+                                                                <datePicker contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Kc-6q-Kg9">
+                                                                    <rect key="frame" x="381" y="0.0" width="320" height="216"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="168" id="p7k-ny-RAq"/>
+                                                                    </constraints>
+                                                                    <date key="date" timeIntervalSinceReferenceDate="672199200.85455596">
+                                                                        <!--2022-04-21 02:00:00 +0000-->
+                                                                    </date>
+                                                                </datePicker>
+                                                            </subviews>
+                                                        </stackView>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                        </stackView>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="hkO-eV-DzV" userLabel="MenuHeaderStackView">
+                                            <rect key="frame" x="0.0" y="3862" width="701" height="159"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Rp-0c-NB4">
+                                                    <rect key="frame" x="0.0" y="0.0" width="701" height="31"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Menu Header" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yfU-e0-he9" userLabel="MenuHeaderTableView">
+                                                            <rect key="frame" x="0.0" y="0.0" width="100.5" height="31"/>
+                                                            <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="15"/>
+                                                            <color key="textColor" name="gray"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SYg-By-Iab" userLabel="Add">
+                                                            <rect key="frame" x="100.5" y="0.0" width="551.5" height="31"/>
+                                                            <state key="normal" title="Button"/>
+                                                            <buttonConfiguration key="configuration" style="plain" image="plus" catalog="system"/>
+                                                            <connections>
+                                                                <action selector="newHeader" destination="-1" eventType="touchUpInside" id="KHf-5R-M6u"/>
+                                                            </connections>
+                                                        </button>
+                                                        <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RHH-u6-SSx">
+                                                            <rect key="frame" x="652" y="0.0" width="49" height="31"/>
+                                                            <state key="normal" title="Button"/>
+                                                            <buttonConfiguration key="configuration" style="plain" title="Edit"/>
+                                                            <connections>
+                                                                <action selector="didTapEdit" destination="-1" eventType="touchUpInside" id="LmW-tc-aey"/>
+                                                            </connections>
+                                                        </button>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstItem="SYg-By-Iab" firstAttribute="leading" secondItem="yfU-e0-he9" secondAttribute="trailing" id="ooA-2m-bRX"/>
+                                                    </constraints>
+                                                </stackView>
+                                                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="isF-z2-ijc" userLabel="MenuHeaderTable">
+                                                    <rect key="frame" x="0.0" y="31" width="701" height="128"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="128" id="7Cu-AO-XzN"/>
+                                                    </constraints>
+                                                </tableView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="isF-z2-ijc" firstAttribute="leading" secondItem="hkO-eV-DzV" secondAttribute="leading" id="9TX-5R-2ZH"/>
+                                                <constraint firstItem="isF-z2-ijc" firstAttribute="top" secondItem="7Rp-0c-NB4" secondAttribute="bottom" id="Awy-LD-rXC"/>
+                                                <constraint firstAttribute="trailing" secondItem="isF-z2-ijc" secondAttribute="trailing" id="Dds-FG-1Gh"/>
+                                                <constraint firstAttribute="bottom" secondItem="isF-z2-ijc" secondAttribute="bottom" id="sPp-cA-r39"/>
+                                            </constraints>
+                                        </stackView>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PU8-so-BrF" userLabel="SignUp Button" customClass="LoadingButton" customModule="PlopIt" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="4046" width="701" height="50"/>
+                                            <color key="backgroundColor" systemColor="systemRedColor"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="50" id="FYw-Zy-lzG"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="0Vw-dX-kng" firstAttribute="top" secondItem="x9y-mi-t0o" secondAttribute="bottom" constant="25" id="5PL-4c-btu"/>
+                                        <constraint firstItem="0Vw-dX-kng" firstAttribute="leading" secondItem="EkG-Kg-zpM" secondAttribute="leading" id="jaX-k9-GdC"/>
+                                        <constraint firstItem="fd9-rV-YJE" firstAttribute="top" secondItem="0Vw-dX-kng" secondAttribute="bottom" constant="15" id="vFc-aP-AAJ"/>
+                                    </constraints>
+                                    <variation key="default">
+                                        <mask key="subviews">
+                                            <exclude reference="uzy-Eu-SAC"/>
+                                            <exclude reference="r5P-5R-QMp"/>
+                                        </mask>
+                                    </variation>
+                                </stackView>
+                            </subviews>
+                            <color key="backgroundColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstItem="EkG-Kg-zpM" firstAttribute="leading" secondItem="qqN-41-Bis" secondAttribute="leading" constant="30" id="7jI-PE-BbM"/>
+                                <constraint firstAttribute="bottom" secondItem="EkG-Kg-zpM" secondAttribute="bottom" id="F00-3n-Cow"/>
+                                <constraint firstAttribute="trailing" secondItem="EkG-Kg-zpM" secondAttribute="trailing" constant="30" id="Kpp-FT-seu"/>
+                                <constraint firstItem="EkG-Kg-zpM" firstAttribute="top" secondItem="qqN-41-Bis" secondAttribute="top" constant="10" id="i1E-b2-gmL"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="qqN-41-Bis" firstAttribute="height" secondItem="u9a-P7-SK4" secondAttribute="height" priority="250" id="4yK-bd-sYs"/>
+                        <constraint firstItem="qqN-41-Bis" firstAttribute="top" secondItem="u9a-P7-SK4" secondAttribute="top" id="8cH-7i-t0x"/>
+                        <constraint firstItem="qqN-41-Bis" firstAttribute="bottom" secondItem="u9a-P7-SK4" secondAttribute="bottom" id="9Da-Ff-CqC"/>
+                        <constraint firstItem="qqN-41-Bis" firstAttribute="width" secondItem="u9a-P7-SK4" secondAttribute="width" id="GCw-ku-UEb"/>
+                        <constraint firstItem="qqN-41-Bis" firstAttribute="trailing" secondItem="u9a-P7-SK4" secondAttribute="trailing" id="SNH-dd-vOv"/>
+                        <constraint firstItem="qqN-41-Bis" firstAttribute="leading" secondItem="u9a-P7-SK4" secondAttribute="leading" id="yNY-Gz-G1t"/>
+                    </constraints>
+                </scrollView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U3F-Vp-iTx">
+                    <rect key="frame" x="16" y="52" width="31" height="26.5"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" image="back"/>
+                    <connections>
+                        <action selector="backButtonTapped:" destination="-1" eventType="touchUpInside" id="V28-fu-7O6"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="cSx-Dd-Sob"/>
+            <color key="backgroundColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="u9a-P7-SK4" firstAttribute="leading" secondItem="cSx-Dd-Sob" secondAttribute="leading" id="U9C-Mx-R9d"/>
+                <constraint firstAttribute="bottom" secondItem="u9a-P7-SK4" secondAttribute="bottom" id="WB7-7d-JLj"/>
+                <constraint firstItem="U3F-Vp-iTx" firstAttribute="leading" secondItem="cSx-Dd-Sob" secondAttribute="leading" constant="16" id="YJE-gf-NDz"/>
+                <constraint firstItem="u9a-P7-SK4" firstAttribute="trailing" secondItem="cSx-Dd-Sob" secondAttribute="trailing" id="dCp-We-FyB"/>
+                <constraint firstItem="U3F-Vp-iTx" firstAttribute="top" secondItem="kIl-5b-myN" secondAttribute="top" constant="52" id="dOy-cL-scb"/>
+                <constraint firstItem="u9a-P7-SK4" firstAttribute="top" secondItem="kIl-5b-myN" secondAttribute="top" id="hY2-7E-goH"/>
+            </constraints>
+            <point key="canvasLocation" x="-814.49275362318849" y="-79.017857142857139"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="back" width="7" height="12.5"/>
+        <image name="minus" catalog="system" width="128" height="24"/>
+        <image name="plus" catalog="system" width="128" height="113"/>
+        <image name="upload" width="41" height="41"/>
+        <namedColor name="gray">
+            <color red="0.5" green="0.54500001668930054" blue="0.52300000190734863" alpha="0.9309999942779541" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="green">
+            <color red="0.35499998927116394" green="0.73600000143051147" blue="0.20100000500679016" alpha="0.83799999952316284" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="red">
+            <color red="1" green="0.23100000619888306" blue="0.18799999356269836" alpha="0.79199999570846558" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

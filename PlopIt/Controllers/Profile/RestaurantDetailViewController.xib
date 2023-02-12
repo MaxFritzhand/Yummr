@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RestaurantDetailViewController">
+            <connections>
+                <outlet property="detailTableView" destination="Ssk-iV-8t1" id="gdd-6m-rkC"/>
+                <outlet property="view" destination="Cgk-cQ-BeG" id="0Hv-Ch-fa6"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Cgk-cQ-BeG" userLabel="Main View">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Ssk-iV-8t1">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="BVQ-35-ymH"/>
+            <color key="backgroundColor" red="0.92941176470588238" green="0.49803921568627452" blue="0.054901960784313725" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <constraints>
+                <constraint firstItem="Ssk-iV-8t1" firstAttribute="leading" secondItem="BVQ-35-ymH" secondAttribute="leading" id="7Qq-53-JzE"/>
+                <constraint firstItem="BVQ-35-ymH" firstAttribute="bottom" secondItem="Ssk-iV-8t1" secondAttribute="bottom" id="CHl-vn-s7L"/>
+                <constraint firstItem="Ssk-iV-8t1" firstAttribute="trailing" secondItem="BVQ-35-ymH" secondAttribute="trailing" id="KbY-FS-O7N"/>
+                <constraint firstItem="Ssk-iV-8t1" firstAttribute="top" secondItem="Cgk-cQ-BeG" secondAttribute="top" id="cPv-ji-PuY"/>
+            </constraints>
+            <point key="canvasLocation" x="-1505.7971014492755" y="-151.33928571428569"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

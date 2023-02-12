@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>fb1481268452269739</string>
+			</array>
+		</dict>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>com.googleusercontent.apps.564404339425-usk8p2jjq21m8fgpd4besjrge7gdg130</string>
+			</array>
+		</dict>
+	</array>
+	<key>FacebookAppID</key>
+	<string>1481268452269739</string>
+	<key>FacebookClientToken</key>
+	<string>3fdf81f0d1b3e33e1ffa629343229fd0</string>
+	<key>FacebookDisplayName</key>
+	<string>Yummr</string>
+	<key>FirebaseAutomaticScreenReportingEnabled</key>
+	<false/>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>fbapi</string>
+		<string>fb-messenger-share-api</string>
+		<string>googlegmail</string>
+		<string>ms-outlook</string>
+		<string>readdle-spark</string>
+		<string>ymail</string>
+		<string>564404339425-usk8p2jjq21m8fgpd4besjrge7gdg130.apps.googleusercontent.com</string>
+	</array>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Poppins-Black.ttf</string>
+		<string>Poppins-BlackItalic.ttf</string>
+		<string>Poppins-Bold.ttf</string>
+		<string>Poppins-BoldItalic.ttf</string>
+		<string>Poppins-ExtraBold.ttf</string>
+		<string>Poppins-ExtraBoldItalic.ttf</string>
+		<string>Poppins-ExtraLight.ttf</string>
+		<string>Poppins-ExtraLightItalic.ttf</string>
+		<string>Poppins-Italic.ttf</string>
+		<string>Poppins-Light.ttf</string>
+		<string>Poppins-LightItalic.ttf</string>
+		<string>Poppins-Medium.ttf
+Poppins-MediumItalic.ttf
+Poppins-Regular.ttf
+Poppins-SemiBold.ttf
+Poppins-SemiBoldItalic.ttf
+Poppins-Thin.ttf
+Poppins-ThinItalic.ttf</string>
+		<string>Poppins-MediumItalic.ttf</string>
+		<string>Poppins-Regular.ttf</string>
+		<string>Poppins-SemiBold.ttf</string>
+		<string>Poppins-SemiBoldItalic.ttf</string>
+		<string>Poppins-Thin.ttf</string>
+		<string>Poppins-ThinItalic.ttf</string>
+	</array>
+	<key>UIApplicationSceneManifest</key>
+	<dict>
+		<key>UIApplicationSupportsMultipleScenes</key>
+		<false/>
+		<key>UISceneConfigurations</key>
+		<dict>
+			<key>UIWindowSceneSessionRoleApplication</key>
+			<array>
+				<dict>
+					<key>UISceneConfigurationName</key>
+					<string>Default Configuration</string>
+					<key>UISceneDelegateClassName</key>
+					<string>$(PRODUCT_MODULE_NAME).SceneDelegate</string>
+					<key>UISceneStoryboardFile</key>
+					<string>Main</string>
+				</dict>
+			</array>
+		</dict>
+	</dict>
+</dict>
+</plist>

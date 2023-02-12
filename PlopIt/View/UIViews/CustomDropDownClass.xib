@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Regular.ttf">
+            <string>Poppins-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomDropDownClass" customModule="PlopIt" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="cIg-dj-dzG" id="G5R-H7-btu"/>
+                <outlet property="errorView" destination="LQz-vh-oiQ" id="JrS-2A-Nhy"/>
+                <outlet property="errorViewHeight" destination="qRf-9S-MBy" id="lWF-dU-yQr"/>
+                <outlet property="mainView" destination="f5K-2A-fEA" id="GtL-9V-Ivr"/>
+                <outlet property="textfield" destination="XaV-Rt-zaU" id="d8w-mg-Auk"/>
+                <outlet property="titleLabel" destination="mRr-KF-7eR" id="IRS-dO-ezf"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="cIg-dj-dzG">
+            <rect key="frame" x="0.0" y="0.0" width="615" height="225"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f5K-2A-fEA">
+                    <rect key="frame" x="0.0" y="71" width="615" height="50"/>
+                    <subviews>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XaV-Rt-zaU" customClass="DropDown" customModule="iOSDropDown">
+                            <rect key="frame" x="0.0" y="0.0" width="615" height="50"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="listHeight">
+                                    <real key="value" value="100"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" red="0.94901960780000005" green="0.95294117649999999" blue="0.95294117649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="2xD-jm-vKY"/>
+                        <constraint firstItem="XaV-Rt-zaU" firstAttribute="top" secondItem="f5K-2A-fEA" secondAttribute="top" id="GIH-QE-YNN"/>
+                        <constraint firstAttribute="bottom" secondItem="XaV-Rt-zaU" secondAttribute="bottom" id="dHT-RH-8Uw"/>
+                        <constraint firstAttribute="trailing" secondItem="XaV-Rt-zaU" secondAttribute="trailing" id="r9D-Ag-eYZ"/>
+                        <constraint firstItem="XaV-Rt-zaU" firstAttribute="leading" secondItem="f5K-2A-fEA" secondAttribute="leading" id="w5y-aH-b5K"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mRr-KF-7eR">
+                    <rect key="frame" x="0.0" y="44" width="615" height="15"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="15" id="mWB-l4-Ajw"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="14"/>
+                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LQz-vh-oiQ" customClass="ErrorView" customModule="PlopIt" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="131" width="615" height="94"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="94" id="qRf-9S-MBy"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="wgk-wH-d5v"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="LQz-vh-oiQ" firstAttribute="top" secondItem="f5K-2A-fEA" secondAttribute="bottom" constant="10" id="C3F-WM-xfo"/>
+                <constraint firstItem="f5K-2A-fEA" firstAttribute="trailing" secondItem="mRr-KF-7eR" secondAttribute="trailing" id="E35-yt-8he"/>
+                <constraint firstItem="LQz-vh-oiQ" firstAttribute="leading" secondItem="f5K-2A-fEA" secondAttribute="leading" id="IBM-A3-oNu"/>
+                <constraint firstItem="LQz-vh-oiQ" firstAttribute="trailing" secondItem="f5K-2A-fEA" secondAttribute="trailing" id="Tk2-KB-jJA"/>
+                <constraint firstItem="mRr-KF-7eR" firstAttribute="leading" secondItem="wgk-wH-d5v" secondAttribute="leading" id="ZpH-n9-j1S"/>
+                <constraint firstItem="wgk-wH-d5v" firstAttribute="trailing" secondItem="mRr-KF-7eR" secondAttribute="trailing" id="gdu-lj-ets"/>
+                <constraint firstItem="f5K-2A-fEA" firstAttribute="leading" secondItem="mRr-KF-7eR" secondAttribute="leading" id="pru-vG-sM5"/>
+                <constraint firstItem="f5K-2A-fEA" firstAttribute="top" secondItem="mRr-KF-7eR" secondAttribute="bottom" constant="12" id="qfh-pd-Lhw"/>
+                <constraint firstAttribute="bottom" secondItem="LQz-vh-oiQ" secondAttribute="bottom" id="sKr-gU-PL9"/>
+                <constraint firstItem="wgk-wH-d5v" firstAttribute="top" secondItem="mRr-KF-7eR" secondAttribute="top" id="v6o-IH-TcC"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-515" y="-14"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

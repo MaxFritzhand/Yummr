@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-SemiBold.ttf">
+            <string>Poppins-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="MenuItemCollectionViewCell" customModule="PlopIt" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="291" height="175"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="291" height="175"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" image="single-frame.gif" translatesAutoresizingMaskIntoConstraints="NO" id="lF8-gp-2ps">
+                        <rect key="frame" x="0.0" y="0.0" width="291" height="153.5"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YCi-F8-4iz">
+                        <rect key="frame" x="134.5" y="158.5" width="22" height="11.5"/>
+                        <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="8"/>
+                        <color key="textColor" red="0.44316577909999999" green="0.44306159020000002" blue="0.44705939290000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="YCi-F8-4iz" firstAttribute="top" secondItem="lF8-gp-2ps" secondAttribute="bottom" constant="5" id="2WZ-JW-rjt"/>
+                <constraint firstAttribute="trailing" secondItem="lF8-gp-2ps" secondAttribute="trailing" id="LSf-7l-F1P"/>
+                <constraint firstItem="YCi-F8-4iz" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="ecr-sP-PyD"/>
+                <constraint firstItem="lF8-gp-2ps" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="nC0-5h-pND"/>
+                <constraint firstItem="lF8-gp-2ps" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="tIV-2f-pHx"/>
+                <constraint firstAttribute="bottom" secondItem="YCi-F8-4iz" secondAttribute="bottom" constant="5" id="yr4-oa-KSZ"/>
+            </constraints>
+            <size key="customSize" width="291" height="175"/>
+            <connections>
+                <outlet property="imageView" destination="lF8-gp-2ps" id="bvf-dG-DSa"/>
+                <outlet property="titleLabel" destination="YCi-F8-4iz" id="hw7-fq-xgC"/>
+            </connections>
+            <point key="canvasLocation" x="70.28985507246378" y="-0.33482142857142855"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="single-frame.gif" width="120" height="64"/>
+    </resources>
+</document>
